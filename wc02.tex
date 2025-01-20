@@ -21,7 +21,7 @@
 % \printanswers %Uncomment this line
 
 \title{Weekly Challenge 02: Propositional logic}
-\author{Blingblong} % <=== replace with your student ID, e.g. xy012345
+\author{ac09507} % <=== replace with your student ID, e.g. xy012345
 \date{CS/MATH 113 Discrete Mathematics\\Habib University\\Spring 2025}
 
 \qformat{{\large\bf \thequestion. \thequestiontitle}\hfill}
@@ -39,7 +39,15 @@ The prank went on so long that it gets noticed by the Master Prank Caller, who i
 
 What one question can Muscle man ask them to figure out if they are speaking the truth or lying? Justify your answer.
 \begin{solution}
-    % Add your solution here
+    Solution: Muscle man should ask: ”If I were to ask you whether ’gazorpazorp’
+means ’yes’, would you say yes?”
+explaintion:
+• If Mordecai and Rigby are truth-tellers, they will truthfully answer the question
+about what they would say. If ”gazorpazorp” means ”yes”, they will say ”yes”,
+and if it means ”no”, they will say ”no”.
+• If they are liars, they will lie about what they would say. If ”gazorpazorp” means
+”yes”, they would say ”no”, and if it means ”no”, they would say ”yes”.
+the answer will always reveal the true meaning of ”gazorpazorp”
 \end{solution}
 
 \titledquestion{How about them apples?}
@@ -53,7 +61,17 @@ What one question can Muscle man ask them to figure out if they are speaking the
   Dr. Crusher is investigating a bunch of 5 apples out of which, 1 is known to be faulty. Describe how she can identify the faulty apple in no more than 3 tricorder scans. Furthermore, what is the minimum number of scans that Dr. Crusher needs to perform in order to guarantee finding the single faulty apple in a bunch of size $n$? Justify your answer.
 
   \begin{solution}
-    % Add your solution here
+    Solution: for identifying the faulty apple in a group of 5 apples, Dr. Crusher can use
+a strategy based on dividing the apples into three groups:
+- Divide the apples into 3 groups: Two groups with 2 apples each and one group with
+1 apple. - First scan the group of 2 apples (Group A). If the scan indicates a problem,
+one of these two apples is faulty. - If Group A is not faulty, scan one of the apples from
+the other two groups (Group B or Group C). - If a fault is detected in this scan, it will
+indicate the faulty apple. Otherwise, the remaining apple from Group C is the faulty
+one.
+The minimum number of scans required to guarantee finding the faulty apple in a group
+of n apples is ⌈log3 n⌉. This is because each scan can reduce the search space to a third
+of the apples, making it a logarithmic search in base 3.
     \end{solution}
 
 
